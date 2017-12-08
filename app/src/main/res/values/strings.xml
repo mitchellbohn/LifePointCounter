@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LifePointCounter</string>
+    <string name="title_points">Points</string>
+    <string name="title_dice">Dice</string>
+    <string name="title_counters">Counters</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="add1000">+1000</string>
+    <string name="add100">+100</string>
+    <string name="add10">+10</string>
+    <string name="add1">+1</string>
+    <string name="sub1000">-1000</string>
+    <string name="sub100">-100</string>
+    <string name="sub10">-10</string>
+    <string name="sub1">-1</string>
+    <string name="p1points">8000</string>
+    <string name="p2points">8000</string>
+    <string name="reset">Reset</string>
+    <string name="title_activity_dice">Dice</string>
+    <string name="dice">20</string>
+</resources>

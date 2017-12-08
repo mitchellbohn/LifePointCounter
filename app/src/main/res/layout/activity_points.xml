@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mitchell.lifepointcounter.PointsActivity">
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/player1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p1points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/p1points"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1add1000" />
+
+    <Button
+        android:id="@+id/p1add1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add1000"
+        app:layout_constraintEnd_toStartOf="@+id/p1add100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <Button
+        android:id="@+id/p1sub1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub1000"
+        app:layout_constraintEnd_toStartOf="@+id/p1sub100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1points" />
+
+    <Button
+        android:id="@+id/p1add100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add100"
+        app:layout_constraintEnd_toStartOf="@+id/p1add10"
+        app:layout_constraintStart_toEndOf="@+id/p1add1000"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <Button
+        android:id="@+id/p1sub100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub100"
+        app:layout_constraintEnd_toStartOf="@+id/p1sub10"
+        app:layout_constraintStart_toEndOf="@+id/p1sub1000"
+        app:layout_constraintTop_toBottomOf="@+id/p1points" />
+
+    <Button
+        android:id="@+id/p1add10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add10"
+        app:layout_constraintEnd_toStartOf="@+id/p1add1"
+        app:layout_constraintStart_toEndOf="@+id/p1add100"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <Button
+        android:id="@+id/p1sub10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub10"
+        app:layout_constraintEnd_toStartOf="@+id/p1sub1"
+        app:layout_constraintStart_toEndOf="@+id/p1sub100"
+        app:layout_constraintTop_toBottomOf="@+id/p1points" />
+
+    <Button
+        android:id="@+id/p1add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1add10"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <Button
+        android:id="@+id/p1sub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1sub10"
+        app:layout_constraintTop_toBottomOf="@+id/p1points" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/player2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1sub1000" />
+
+    <TextView
+        android:id="@+id/p2points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/p2points"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2add1000" />
+
+    <Button
+        android:id="@+id/p2add1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add1000"
+        app:layout_constraintEnd_toStartOf="@+id/p2add100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <Button
+        android:id="@+id/p2sub1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub1000"
+        app:layout_constraintEnd_toStartOf="@+id/p2sub100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2points" />
+
+    <Button
+        android:id="@+id/p2add100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add100"
+        app:layout_constraintEnd_toStartOf="@+id/p2add10"
+        app:layout_constraintStart_toEndOf="@+id/p2add1000"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <Button
+        android:id="@+id/p2sub100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub100"
+        app:layout_constraintEnd_toStartOf="@+id/p2sub10"
+        app:layout_constraintStart_toEndOf="@+id/p2sub1000"
+        app:layout_constraintTop_toBottomOf="@+id/p2points" />
+
+    <Button
+        android:id="@+id/p2add10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add10"
+        app:layout_constraintEnd_toStartOf="@+id/p2add1"
+        app:layout_constraintStart_toEndOf="@+id/p2add100"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <Button
+        android:id="@+id/p2sub10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub10"
+        app:layout_constraintEnd_toStartOf="@+id/p2sub1"
+        app:layout_constraintStart_toEndOf="@+id/p2sub100"
+        app:layout_constraintTop_toBottomOf="@+id/p2points" />
+
+    <Button
+        android:id="@+id/p2add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p2add10"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <Button
+        android:id="@+id/p2sub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p2sub10"
+        app:layout_constraintTop_toBottomOf="@+id/p2points" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2sub1000" />
+
+    <Button
+        android:id="@+id/points"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="@string/title_points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dice"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="@string/title_dice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/counters"
+        app:layout_constraintStart_toEndOf="@+id/points" />
+
+    <Button
+        android:id="@+id/counters"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="@string/title_counters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dice" />
+
+</android.support.constraint.ConstraintLayout>
