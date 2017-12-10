@@ -204,8 +204,8 @@ public class PointsActivity extends AppCompatActivity {
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                p1points.setText(String.valueOf("8000"));
-                p2points.setText(String.valueOf("8000"));
+                p1points.setText("8000");
+                p2points.setText("8000");
             }
         });
 

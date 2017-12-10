@@ -18,4 +18,6 @@
     <string name="reset">Reset</string>
     <string name="title_activity_dice">Dice</string>
     <string name="dice">20</string>
+    <string name="roll">Roll</string>
+    <string name="sides">SIDES</string>
 </resources>
