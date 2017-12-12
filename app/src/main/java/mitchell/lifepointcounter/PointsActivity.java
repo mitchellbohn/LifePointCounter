@@ -1,5 +1,6 @@
 package mitchell.lifepointcounter;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -202,6 +203,7 @@ public class PointsActivity extends AppCompatActivity {
         });
 
         reset.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 p1points.setText("8000");

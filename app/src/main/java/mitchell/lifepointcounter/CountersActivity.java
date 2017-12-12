@@ -24,7 +24,6 @@ import java.util.ArrayList;
 
 public class CountersActivity extends AppCompatActivity {
 
-    private static final String TAG = "CountersActivity";
     private CounterHelper mHelper;
     private ListView mCounterListView;
     private ArrayAdapter<String> mAdapter;
@@ -38,7 +37,7 @@ public class CountersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_counters);
 
         mHelper = new CounterHelper(this);
-        mCounterListView = (ListView) findViewById(R.id.list_counters);
+        mCounterListView = findViewById(R.id.list_counters);
 
         dice = findViewById(R.id.dice);
         points = findViewById(R.id.points);
@@ -127,7 +126,7 @@ public class CountersActivity extends AppCompatActivity {
 
     public void deleteCounter(View view) {
         View parent = (View) view.getParent();
-        TextView counterTextView = (TextView) parent.findViewById(R.id.counter_title);
+        TextView counterTextView = parent.findViewById(R.id.counter_title);
         String counter = String.valueOf(counterTextView.getText());
         SQLiteDatabase db = mHelper.getWritableDatabase();
         db.delete(Counter.CounterEntry.TABLE, Counter.CounterEntry.COL_COUNTER_TITLE + " = ?", new String[] {counter});
